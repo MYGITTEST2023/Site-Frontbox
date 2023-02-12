@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*************** 0. Variáveis *******************/
+
+:root {
+    --ff-primary: "Gentium Book Plus", sans-serif;
+
+    --clr-green-dark: #049A40;
+    --clr-green-light:#0BF96A;
+    --clr-pink-dark:  #E10BF9;
+    --clr-pink-dark:  #F3A0FD;
+    --clr-white:      #f5f5f5;
+}
+
+/************************************************/
+
+/*************** 1. Estilos gerais **************/
+
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-white);
+}
+
+a,
+a:hover,
+a:active,
+a link,
+a:visited {
+    text-decoration: dashed;
+    color: black;
+}
+
+hr {
+    border: none;
+    background-color: var(--clr-pink-dark);
+    height: .125rem;
+    width: 8.75rem;
+    margin: 1.25rem auto;
+}
+
+/************************************************/
+
+/*************** 2. Menu ************************/
+
+.menu-bg {
+    background-color: var(--clr-green-light);
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    padding: 1.25rem .625rem;
+}
+
+/************************************************/
+
+/**************** 3. Header *********************/
+
+.intro {
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+/************************************************/
